@@ -13,8 +13,8 @@ export default Styles = StyleSheet.create({
     loginContainerImage: {
         resizeMode: 'contain',
         flex: 1,
-        width: 125,
-        height: 139
+        width: Dimensions.get('screen').width * 0.3019,
+        height: Dimensions.get('screen').height * 0.1551
     },
     loginContainerSectionTwo: {
         flex: 1,
@@ -23,7 +23,7 @@ export default Styles = StyleSheet.create({
     },
     loginContainerTextInput: {
         width: Dimensions.get('window').width * 0.90,
-        height: 45,
+        height: Dimensions.get('screen').height * 0.0502,
         borderBottomColor: "#9594B4",
         borderBottomWidth: 1
     },
@@ -32,8 +32,8 @@ export default Styles = StyleSheet.create({
         justifyContent: 'space-evenly',
         alignItems: 'center'
     },
-    loginContainerText:{ 
-        color: "#929292", 
-        fontSize: 14 
+    loginContainerText: {
+        color: "#929292",
+        fontSize: 14
     }
 })

@@ -1,8 +1,8 @@
 import React from 'react'
 import { View, Text, Image, TextInput, TouchableHighlight } from 'react-native'
-import Button from '../../components/Button'
-import ButtonFacebook from '../../components/ButtonFacebook'
-import ButtonGoogle from '../../components/ButtonGoogle'
+import Button from '../../components/Buttons/Button'
+import ButtonFacebook from '../../components/Buttons/ButtonFacebook'
+import ButtonGoogle from '../../components/Buttons/ButtonGoogle'
 import assets from '../../assets/assets'
 const logo = assets.images.logo3x
 import Styles from './Styles'
@@ -16,7 +16,7 @@ const Login = (props) => {
             <View style={Styles.loginContainerSectionTwo}>
                 <TextInput placeholder="email" style={Styles.loginContainerTextInput} />
                 <TextInput placeholder="password" style={Styles.loginContainerTextInput} />
-                <TouchableHighlight onPress={() => props.loginAction()} >
+                <TouchableHighlight onPress={() => props.loginAction()} underlayColor={'transparente'}>
                     <Button text={"Login"} />
                 </TouchableHighlight>
             </View>

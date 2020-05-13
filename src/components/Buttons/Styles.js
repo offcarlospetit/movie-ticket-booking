@@ -1,11 +1,13 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Dimensions } from 'react-native';
+
+
 
 export default Styles = StyleSheet.create({
     buttonContainer: {
         alignItems: 'center',
         justifyContent: 'center',
-        width: 335,
-        height: 50,
+        width: Dimensions.get('screen').width * 0.809,
+        height: Dimensions.get('screen').height *0.0558,
         borderRadius: 8,
         backgroundColor: 'rgba(10, 6, 87, 255)',
         shadowColor: '#000',
@@ -19,8 +21,8 @@ export default Styles = StyleSheet.create({
         flexDirection: 'row',
         paddingStart: 23.5,
         paddingTop: 10,
-        width: 335,
-        height: 50,
+        width: Dimensions.get('screen').width * 0.809,
+        height: Dimensions.get('screen').height *0.0558,
         borderRadius: 8,
         backgroundColor: 'rgba(58, 85, 159, 255)',
     },
@@ -30,8 +32,8 @@ export default Styles = StyleSheet.create({
         justifyContent: 'center',
         paddingStart: 23.5,
         paddingTop: 10,
-        width: 335,
-        height: 50,
+        width: Dimensions.get('screen').width * 0.809,
+        height: Dimensions.get('screen').height *0.0558,
         borderRadius: 8,
         borderColor: 'rgba(212, 212, 212, 255)',
         backgroundColor: 'rgba(255, 255, 255, 255)',

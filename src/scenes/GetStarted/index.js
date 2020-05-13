@@ -13,7 +13,6 @@ class Index extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <GetStarted _initAction={this._initAction.bind(this)} />
     )
