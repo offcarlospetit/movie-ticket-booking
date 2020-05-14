@@ -14,22 +14,25 @@ export default Styles = StyleSheet.create({
         marginLeft: 20
     },
     headerContainerCenter: {
-        flex: 2,
+        flex: 8,
         justifyContent: 'center',
         alignContent: 'center',
         alignItems: 'center',
+        flexDirection: 'row',
     },
     headerContainerRight: {
         flex: 1,
+        flexDirection:'row',
         justifyContent: 'center',
         alignContent: 'center',
-        alignItems: 'flex-end',
-        marginRight: 20
+        alignItems: 'center',
+        marginRight: 20,
     },
     headerTitle: {
         // fontFamily: 'AvenirLTStd',
         textTransform: 'uppercase',
         fontSize: 28,
         color: '#050329',
+        marginLeft:35,
     }
 })

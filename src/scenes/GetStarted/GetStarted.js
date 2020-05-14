@@ -11,7 +11,7 @@ export default function GetStarted(props) {
         <SafeAreaView style={Styles.getStartedContainer}>
             <Image source={logo} width={137} height={154} style={Styles.getStartedContainerImageLogo} />
             <View style={Styles.getStartedContainerContent}>
-                <TouchableHighlight onPress={() => props._initAction()} >
+                <TouchableHighlight onPress={() => props._initAction()} underlayColor={"transparent"} >
                     <Button text={"Iniciar"} />
                 </TouchableHighlight>
             </View>
