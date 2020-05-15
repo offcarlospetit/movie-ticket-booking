@@ -1,5 +1,5 @@
 import { StyleSheet, Dimensions } from "react-native";
-
+import Assets from 'assets'
 
 
 export default Styles = StyleSheet.create({
@@ -57,7 +57,7 @@ export default Styles = StyleSheet.create({
         width: Dimensions.get('screen').width * 0.2657,
         height: Dimensions.get('screen').height * 0.1462,
         borderRadius: 12,
-        marginRight: 12
+        marginRight: 12,
     },
     scrollViewList: {
         flex: 1,
@@ -72,10 +72,11 @@ export default Styles = StyleSheet.create({
     },
     textDetailTitle: {
         fontSize: 12,
-        color: '#050329'
+        color: Assets.colors.PRIMARY_COLOR,
+        fontWeight:'bold'
     },
     textDetailTitlePercent: {
         fontSize: 10,
-        color: '#050329'
+        color: Assets.colors.PRIMARY_COLOR
     }
 })

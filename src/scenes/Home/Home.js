@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Text, SafeAreaView, ScrollView, TouchableHighlight, Dimensions } from 'react-native';
-import Header from '../../components/Header'
-import MovieGallery from '../../components/MovieGallery/MovieGallery'
-import MovieGallery2 from '../../components/MovieGallery/MovieGalleryCategory'
-import CategoryList from '../../components/CategoryList/CategoryList'
+import { View, Text, SafeAreaView, ScrollView } from 'react-native';
+import Header from 'components/Header'
+import MovieGallery from 'components/MovieGallery/MovieGallery'
+import MovieGallery2 from 'components/MovieGallery/MovieGalleryCategory'
+import CategoryList from 'components/CategoryList/CategoryList'
 import Styles from './Styles'
 
 
@@ -15,15 +15,15 @@ export default function Home(props) {
             <View style={Styles.containerBody}>
                 <ScrollView showsHorizontalScrollIndicator={false} contentContainerStyle={Styles.containerBodyScrollView}>
                     <View style={Styles.containerBodyScrollViewGallery}>
-                        <MovieGallery data={props.data} />
+                        <MovieGallery data={props.data.sort(function (a, b) { return 0.5 - Math.random() })} />
                     </View>
                     <View style={{ flex: 6 }}>
                         <CategoryList categorys={props.categorys} categorySelect={props.categorySelect} selectCaegory={props.selectCaegory} type={"categorySelect"} />
-                        <MovieGallery2 data={props.data} />
+                        <MovieGallery2 data={props.data.sort(function (a, b) { return 0.5 - Math.random() })} />
                     </View>
                     <View style={{ flex: 6 }}>
-                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect_popular} selectCaegory={props.selectCaegory} type={"categorySelect_popular"}/>
-                        <MovieGallery2 data={props.data} />
+                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect_popular} selectCaegory={props.selectCaegory} type={"categorySelect_popular"} />
+                        <MovieGallery2 data={props.data.sort(function (a, b) { return 0.5 - Math.random() })} />
                     </View>
                 </ScrollView>
             </View>

@@ -18,8 +18,8 @@ export default function MovieGalleryCategory({ ...props }) {
                                         </View>
                                     </View>
                                     <View style={Styles.movieDetail}>
-                                        <Text style={Styles.textDetailTitle}>Title</Text>
-                                        <Text style={Styles.textDetailTitlePercent}>♥️ 65%</Text>
+                                        <Text style={Styles.textDetailTitle}>{row.name}</Text>
+                                        <Text style={Styles.textDetailTitlePercent}>♥️ {row.rate}%</Text>
                                     </View>
                                 </View>
                             </TouchableHighlight>
