@@ -1,20 +1,16 @@
 import React from 'react';
 import { View, Text, ScrollView, TouchableHighlight, Dimensions } from 'react-native';
 import Styles from './Styles'
+import Assets from 'assets'
 
 function getStyle(index, selected) {
     let value = index == selected ? 4 : 0
-    return {
-        width: Dimensions.get('screen').width * 0.30,
-        justifyContent: 'center',
-        alignContent: 'center',
-        alignItems: 'center',
-        borderBottomWidth: value,
-        borderBottomColor: '#8A40F0',
-        marginRight: 10,
-        marginLeft: 10
-    }
+    return { borderBottomWidth: value }
+}
 
+function getColor(index, selected) {
+    let color = index == selected ? Assets.colors.PRIMARY_COLOR : Assets.colors.PRIMARY_COLOR_OPACYTY
+    return { color: color }
 }
 
 export default function CategoryList(props) {
@@ -24,9 +20,9 @@ export default function CategoryList(props) {
                 {
                     props.categorys.map((category, index) => {
                         return (
-                            <View style={getStyle(index, props.categorySelect)}>
-                                <TouchableHighlight onPress={() => { null }} underlayColor={'transparente'}>
-                                    <Text style={Styles.categoryContainerCategoryText}>{category}</Text>
+                            <View style={[Styles.CategoryListContent, getStyle(index, props.categorySelect)]}>
+                                <TouchableHighlight onPress={() => { props.selectCaegory(index, props.type) }} underlayColor={'transparente'}>
+                                    <Text style={[Styles.categoryContainerCategoryText, getColor(index, props.categorySelect)]}>{category}</Text>
                                 </TouchableHighlight>
                             </View>
                         )

@@ -11,9 +11,9 @@ export default Styles = StyleSheet.create({
         borderRadius: 8,
         backgroundColor: 'rgba(10, 6, 87, 255)',
         shadowColor: '#000',
-        shadowOffset: { width: 0, height: 6 },
-        shadowOpacity: 0.8,
-        shadowRadius: 10,
+        shadowOffset: { width: 0, height: 3 },
+        shadowOpacity: 0.6,
+        shadowRadius: 6,
     },
     buttonContainerFacebook: {
         alignItems: 'center',

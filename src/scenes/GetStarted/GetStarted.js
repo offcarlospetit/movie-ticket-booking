@@ -1,8 +1,7 @@
 import React from 'react';
 import { View, Text, Image, TouchableHighlight, SafeAreaView } from 'react-native';
-import Button from '../../components/Buttons/Button'
-import assets from '../../assets/assets'
-import { useLinkProps } from '@react-navigation/native';
+import Button from 'components/Buttons/Button'
+import assets from 'assets'
 const logo = assets.images.logo3x
 import Styles from './Styles'
 

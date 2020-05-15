@@ -32,17 +32,20 @@ class index extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            categorySelect_popular: 0,
             categorySelect: 0,
             data: data,
             categorys: categorys
         };
     }
 
-
+    selectCaegory(category, type) {
+        this.setState({ [type]: category })
+    }
 
     render() {
         return (
-            <Home {...this.state} />
+            <Home {...this.state} selectCaegory={this.selectCaegory.bind(this)} />
         );
     }
 }

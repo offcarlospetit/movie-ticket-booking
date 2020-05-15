@@ -18,11 +18,11 @@ export default function Home(props) {
                         <MovieGallery data={props.data} />
                     </View>
                     <View style={{ flex: 6 }}>
-                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect} />
+                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect} selectCaegory={props.selectCaegory} type={"categorySelect"} />
                         <MovieGallery2 data={props.data} />
                     </View>
                     <View style={{ flex: 6 }}>
-                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect} />
+                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect_popular} selectCaegory={props.selectCaegory} type={"categorySelect_popular"}/>
                         <MovieGallery2 data={props.data} />
                     </View>
                 </ScrollView>

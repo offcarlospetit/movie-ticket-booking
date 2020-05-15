@@ -28,6 +28,7 @@ export default Styles = StyleSheet.create({
     imageCoverView: {
         alignItems: "center",
         flex: 1,
+        justifyContent: 'center',
         shadowColor: '#000',
         shadowOffset: { width: 0, height: 3 },
         shadowOpacity: 0.3,

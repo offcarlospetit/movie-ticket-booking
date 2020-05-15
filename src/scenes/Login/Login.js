@@ -1,9 +1,9 @@
 import React from 'react'
 import { View, Text, Image, TextInput, TouchableHighlight } from 'react-native'
-import Button from '../../components/Buttons/Button'
-import ButtonFacebook from '../../components/Buttons/ButtonFacebook'
-import ButtonGoogle from '../../components/Buttons/ButtonGoogle'
-import assets from '../../assets/assets'
+import Button from 'components/Buttons/Button'
+import ButtonFacebook from 'components/Buttons/ButtonFacebook'
+import ButtonGoogle from 'components/Buttons/ButtonGoogle'
+import assets from 'assets'
 const logo = assets.images.logo3x
 import Styles from './Styles'
 

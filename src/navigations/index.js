@@ -2,11 +2,11 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import GetStarted from "../scenes/GetStarted";
-import Login from "../scenes/Login";
-import Home from "../scenes/Home";
-import Profile from "../scenes/Profile";
-import Theaters from "../scenes/Theaters";
+import GetStarted from "scenes/GetStarted";
+import Login from "scenes/Login";
+import Home from "scenes/Home";
+import Profile from "scenes/Profile";
+import Theaters from "scenes/Theaters";
 
 const StackStarted = createStackNavigator()
 const StackLogin = createStackNavigator()
