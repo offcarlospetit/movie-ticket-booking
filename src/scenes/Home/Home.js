@@ -15,15 +15,15 @@ export default function Home(props) {
             <View style={Styles.containerBody}>
                 <ScrollView showsHorizontalScrollIndicator={false} contentContainerStyle={Styles.containerBodyScrollView}>
                     <View style={Styles.containerBodyScrollViewGallery}>
-                        <MovieGallery data={props.data.sort(function (a, b) { return 0.5 - Math.random() })} />
+                        <MovieGallery data={props.category} />
                     </View>
                     <View style={{ flex: 6 }}>
                         <CategoryList categorys={props.categorys} categorySelect={props.categorySelect} selectCaegory={props.selectCaegory} type={"categorySelect"} />
-                        <MovieGallery2 data={props.data.sort(function (a, b) { return 0.5 - Math.random() })} />
+                        <MovieGallery2 data={props.category} />
                     </View>
                     <View style={{ flex: 6 }}>
                         <CategoryList categorys={props.categorys} categorySelect={props.categorySelect_popular} selectCaegory={props.selectCaegory} type={"categorySelect_popular"} />
-                        <MovieGallery2 data={props.data.sort(function (a, b) { return 0.5 - Math.random() })} />
+                        <MovieGallery2 data={props.category_popular} />
                     </View>
                 </ScrollView>
             </View>
