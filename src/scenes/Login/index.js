@@ -3,6 +3,7 @@ import { View, Text, Image, TextInput, Dimensions, TouchableHighlight } from 're
 import LoginView from './Login'
 
 class Index extends Component {
+    
     constructor(props) {
         super(props);
         this.state = {
@@ -10,6 +11,7 @@ class Index extends Component {
     }
 
     loginAction(){
+        // console.log(this.props.isLoggedIn);
         this.props.navigation.navigate("Home")
     }
 

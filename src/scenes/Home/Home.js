@@ -15,15 +15,15 @@ export default function Home(props) {
             <View style={Styles.containerBody}>
                 <ScrollView showsHorizontalScrollIndicator={false} contentContainerStyle={Styles.containerBodyScrollView}>
                     <View style={Styles.containerBodyScrollViewGallery}>
-                        <MovieGallery data={props.category} />
+                        <MovieGallery data={props.category} movieDetailAction={props.movieDetailAction} />
                     </View>
                     <View style={{ flex: 6 }}>
-                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect} selectCaegory={props.selectCaegory} type={"categorySelect"} />
-                        <MovieGallery2 data={props.category} />
+                        <CategoryList categories={props.categories} categorieselect={props.categorieselect} selectCaegory={props.selectCaegory} type={"categorieselect"} />
+                        <MovieGallery2 data={props.category} movieDetailAction={props.movieDetailAction} type={"categorieselect"} />
                     </View>
                     <View style={{ flex: 6 }}>
-                        <CategoryList categorys={props.categorys} categorySelect={props.categorySelect_popular} selectCaegory={props.selectCaegory} type={"categorySelect_popular"} />
-                        <MovieGallery2 data={props.category_popular} />
+                        <CategoryList categories={props.categories} categorieselect={props.categorieselect_popular} selectCaegory={props.selectCaegory} type={"categorieselect_popular"} />
+                        <MovieGallery2 data={props.category_popular} movieDetailAction={props.movieDetailAction} type={"categorieselect"} />
                     </View>
                 </ScrollView>
             </View>

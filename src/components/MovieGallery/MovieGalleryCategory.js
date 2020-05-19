@@ -8,9 +8,9 @@ export default function MovieGalleryCategory({ ...props }) {
         <View style={Styles.movieGalleryContainer}>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} contentContainerStyle={Styles.scrollViewContainerContainer}>
                 {
-                    dataArray.map((row) => {
+                    dataArray.map((row, index) => {
                         return (
-                            <TouchableHighlight underlayColor="transparent" onPress={() => null}>
+                            <TouchableHighlight underlayColor="transparent" onPress={() => props.movieDetailAction(index, props.type)}>
                                 <View style={Styles.scrollViewList}>
                                     <View style={Styles.imageCoverContainer}>
                                         <View style={Styles.imageCoverView} >

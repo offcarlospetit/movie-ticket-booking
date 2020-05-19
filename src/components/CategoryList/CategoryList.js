@@ -18,11 +18,11 @@ export default function CategoryList(props) {
         <View style={Styles.categoryContainer}>
             <ScrollView horizontal={true} showsHorizontalScrollIndicator={false} contentContainerStyle={Styles.categoryContainerScrollView}>
                 {
-                    props.categorys.map((category, index) => {
+                    props.categories.map((category, index) => {
                         return (
-                            <View style={[Styles.CategoryListContent, getStyle(index, props.categorySelect)]}>
+                            <View style={[Styles.CategoryListContent, getStyle(index, props.categorieselect)]}>
                                 <TouchableHighlight onPress={() => { props.selectCaegory(index, props.type) }} underlayColor={'transparente'}>
-                                    <Text style={[Styles.categoryContainerCategoryText, getColor(index, props.categorySelect)]}>{category}</Text>
+                                    <Text style={[Styles.categoryContainerCategoryText, getColor(index, props.categorieselect)]}>{category}</Text>
                                 </TouchableHighlight>
                             </View>
                         )
